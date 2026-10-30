@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="HelpMe"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelpMe">
+
+        <!-- Pantalla principal -->
+        <activity
+            android:name=".view.HomeActivity"
+            android:exported="false" />
+
+        <!-- Pantalla de registro -->
+        <activity
+            android:name=".view.RegistroActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Pantalla para crear reportes -->
+        <activity
+            android:name=".view.CrearReporteActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Pantalla de inicio de sesión -->
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".view.MisReportesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.ConsultarReportesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.EstadisticasActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.MapaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.AdminReportesActivity"
+            android:exported="false" />
+
+        <!-- MainActivity original -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- FileProvider para la cámara -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+    </application>
+
+</manifest>

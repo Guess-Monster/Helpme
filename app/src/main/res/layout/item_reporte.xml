@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="#F1F5F9">
+
+    <TextView
+        android:id="@+id/txtTipoReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de incidente"
+        android:textColor="#0F172A"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtDescripcionReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Descripción"
+        android:textColor="#334155"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/txtEstadoReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pendiente"
+        android:textColor="#B45309"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtFechaReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Fecha"
+        android:textColor="#64748B"
+        android:textSize="12sp"/>
+
+</LinearLayout>

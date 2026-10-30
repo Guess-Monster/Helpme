@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/txtDetalleTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de incidente"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"/>
+
+    <TextView
+        android:id="@+id/txtDetalleEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:text="Pendiente"
+        android:textStyle="bold"
+        android:textColor="#92400E"
+        android:background="#FEF3C7"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Descripción"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#475569"/>
+
+    <TextView
+        android:id="@+id/txtDetalleDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Descripción del incidente"
+        android:textSize="16sp"
+        android:textColor="#0F172A"/>
+
+    <TextView
+        android:id="@+id/txtDetalleFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fecha de publicación"
+        android:textSize="14sp"
+        android:textColor="#64748B"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="La ubicación mostrada en el mapa es aproximada."
+        android:textSize="12sp"
+        android:textColor="#64748B"/>
+
+</LinearLayout>

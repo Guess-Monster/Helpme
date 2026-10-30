@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Mapa de incidentes"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"/>
+
+    <TextView
+        android:id="@+id/txtContadorMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:text="Cargando incidentes..."
+        android:textColor="#64748B"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp">
+
+        <Spinner
+            android:id="@+id/spinnerTipoMapa"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="#F1F5F9"
+            android:padding="6dp"/>
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="1dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerEstadoMapa"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="#F1F5F9"
+            android:padding="6dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <Button
+            android:id="@+id/btnActualizarMapa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Actualizar"
+            android:textSize="12sp"/>
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/btnCambiarVistaMapa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ver mapa de calor"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapaIncidentes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/txtLeyendaMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="8dp"
+        android:text="Categorías de incidentes"
+        android:textStyle="bold"
+        android:textColor="#0F172A"
+        android:textSize="14sp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollLeyendaMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="🔴 Seguridad"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="🟠 Infraestructura"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="🟣 Animal perdido"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="🟡 Accidente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="🩷 Emergencia médica"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="🟢 Problema ambiental"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="🔵 Otro"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:gravity="center"
+        android:text="Ubicaciones aproximadas • © OpenStreetMap contributors"
+        android:textSize="11sp"
+        android:textColor="#64748B"/>
+
+</LinearLayout>

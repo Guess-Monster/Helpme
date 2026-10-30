@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "23391022067",
+    "firebase_url": "https://helpme-31e96-default-rtdb.firebaseio.com",
+    "project_id": "helpme-31e96",
+    "storage_bucket": "helpme-31e96.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23391022067:android:045f2ee12bc95dc8e70086",
+        "android_client_info": {
+          "package_name": "com.helpme.redciudadana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23391022067-4kk7qs0rev4d79llf5hgmkvtk74fus1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8-M0xd-MWewF5wwonWtYxaQaHybadTks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23391022067-4kk7qs0rev4d79llf5hgmkvtk74fus1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

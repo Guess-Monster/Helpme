@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="#F1F5F9">
+
+    <TextView
+        android:id="@+id/txtTipoPublico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de incidente"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"/>
+
+    <TextView
+        android:id="@+id/txtDescripcionPublico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Descripción"
+        android:textColor="#334155"/>
+
+    <TextView
+        android:id="@+id/txtEstadoPublico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Estado"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtFechaPublico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Fecha"
+        android:textColor="#64748B"/>
+
+</LinearLayout>
